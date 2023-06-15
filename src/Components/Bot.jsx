@@ -26,7 +26,7 @@ export default function Bot(props) {
   } 
   const sendMessage = async (question)=>{
     try{
-      const response = await axios.get(`http://localhost:5000/classify`,{params:{question:question}})
+      const response = await axios.get(`http://localhost:8000/classify`,{params:{question:question}})
       if (response.status === 200) {
         setChat([...chat, { user: 0, message: question } ,{ user: 1, message: response.data.reponse }]);
         setQuestion("")
