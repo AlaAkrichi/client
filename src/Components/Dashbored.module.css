@@ -1,0 +1,28 @@
+.Container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.action{
+    position: fixed;
+    bottom: 20px; /* Adjust the value as needed to set the distance from the bottom */
+    right: 20px; /* Adjust the value as needed to set the distance from the right */
+    z-index: 9999;
+}
+.chatWindow {
+    position: fixed;
+    bottom: 20px; /* Adjust the value as needed to set the distance from the bottom */
+    right: 20px; /* Adjust the value as needed to set the distance from the right */
+    width: 300px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    background-color: #f1f1f1; /* Adjust the background color as needed */
+    border: 1px solid #ccc; /* Add border styles as needed */
+    border-radius: 4px; /* Adjust the border radius as needed */
+    z-index: 9999; /* Set a higher z-index to ensure the chat window appears above other elements */
+    background-color: #393a4e;  
+    color: #fdfbfb;
+    display: flex;
+    flex-direction: column;
+}
